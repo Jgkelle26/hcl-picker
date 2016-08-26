@@ -24,6 +24,7 @@ time, mark, audio, video {
   font:inherit;
   vertical-align:baseline;
   }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -119,82 +120,6 @@ a code {
             box-shadow:inset 0 0 0 1px rgba(0,0,0,0.05);
   }
 
-/* Buttons */
-button,
-.button {
-  font:700 13px/1.6667 'Helvetica neue', Helvetica, sans-serif;
-  background-color:#353535;
-  text-align:center;
-  color:#808080;
-  display:inline-block;
-  margin:0;
-  padding:10px 5px;
-  position:relative;
-  border:none;
-  cursor:pointer;
-  border-radius:3px;
-  white-space:nowrap;
-  text-overflow:ellipsis;
-  -webkit-appearance:none;
-  -webkit-font-smoothing:antialiased;
-  }
-
-button:hover,
-.button:hover,
-.button.active {
-  color:#fff;
-  }
-
-button:focus,
-.button:focus {
-  -webkit-box-shadow: inset 0 0 0 3px rgba(0,0,0,0.1);
-  box-shadow: inset 0 0 0 3px rgba(0,0,0,0.1);
-}
-
-button:hover,
-.button:hover,
-.button.active {
-  background-color:#666;
-  }
-
-.button.mode .icon { opacity:0.5; }
-.button.mode:hover .icon,
-.button.mode.active .icon { opacity:1; }
-
-/* Use <!-- --> to eliminate whitespace between buttons. */
-.pill{
-  display:inline-block;
-  }
-  .pill > * {
-    border-radius:0 0 0 0;
-    border:0 solid white;
-    border-left-width:1px;
-    }
-    .pill > *:first-of-type,
-    .pill > *:first-child {
-      border-radius:3px 0 0 3px;
-      border-left-width:0;
-      }
-    .pill > *:last-of-type,
-    .pill > *:last-child {
-      border-radius:0 3px 3px 0;
-      }
-
-/* Vertical pill if pill contents is full width . */
-.pill > .col12 {
-  border-bottom-width:1px;
-  border-left-width:0;
-  }
-  .pill > .col12:first-child {
-    border-radius:3px 3px 0 0;
-    }
-  .pill > .col12:last-child {
-    border-radius:0 0 3px 3px;
-    border-bottom:none;
-    }
-  .pill > .col12:only-child {
-    border-radius: 3px;
-    }
 
 input[type=range],
 input[type=range]::-webkit-slider-thumb {
