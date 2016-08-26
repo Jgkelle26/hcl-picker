@@ -70,7 +70,7 @@ input[type=range]::-moz-range-thumb {
 .uppercase { text-transform:uppercase; }
 .fill-white { background-color:#fff; }
 .pill > * { border-color:#181818; }
-.quiet { color:#aaa; }
+.quiet { color:#fff; text-shadow: 0px 0px 4px rgb(68, 65, 65);}
 .space-top2 { margin-top:20px; }
 .space-top4 { margin-top:40px; }
 
@@ -211,7 +211,7 @@ input[type=range]::-moz-range-thumb {
   }
 
 .sidebar {
-  background:#353535;
+  background: transparent;
   width:145px;
   height:460px;
   float:left;
@@ -268,7 +268,7 @@ input[type=range]::-moz-range-thumb {
   overflow:auto;
   overflow-x:hidden;
   padding-left:5px;
-  line-height:30px;
+  line-height:60px;
   }
   .hexes > * {
     display:block;
@@ -276,16 +276,26 @@ input[type=range]::-moz-range-thumb {
     }
 .output {
   overflow:auto;
-  height:420px;
   }
   .output.with-select {
     height:380px;
     }
 .output .swatch {
-  width:40px;
-  height:30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    height: 40px;
+    padding: 25px;
+    margin: 10px;
+    box-shadow: 0px 6px 35px -1px rgba(0,0,0,0.41);
+    transition: width 0.2 ease;
   }
 
+  .swatch:hover{
+    width:50px;
+    height: 50px;
+  }
+  
 .control,
 .controls a {
   background:#505050;
@@ -323,3 +333,39 @@ input[type=range]::-moz-range-thumb {
     float:left;
     margin:5px 0 10px;
     }
+
+/* Add ons */
+
+.bkg{
+width: 100%;
+background-color: #000;
+}
+
+.center{
+text-align: center;
+}
+
+
+.button-pk{
+  color: #fff;
+  width:100%;
+  font: 700 13px/1.6667 'Helvetica neue', Helvetica, sans-serif;
+  text-align: center;
+  display: inline-block;
+  margin: 0;
+  padding: 10px 5px;
+  position: relative;
+  border: none;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+  transition: all 0.2s ease;
+
+}
+
+.button-pk:hover{
+  background-color: #666;
+}
+
+
